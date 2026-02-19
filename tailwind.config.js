@@ -5,7 +5,11 @@ export default {
     "./src/renderer/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-  },
+    extend: {
+      fontFamily: {
+        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+      },
+    },
+},
   plugins: [],
 }

@@ -26,6 +26,20 @@ function createWindow() {
   }
 
   mainWindow.once('ready-to-show', () => mainWindow?.show())
+
+  // Fullscreen detection
+  const sendFullscreenState = () => {
+    mainWindow?.webContents.send('fullscreen-change', mainWindow.isFullScreen())
+  }
+
+  mainWindow.on('enter-full-screen', sendFullscreenState)
+  mainWindow.on('leave-full-screen', sendFullscreenState)
+  mainWindow.on('resize', () => { // optional extra responsiveness
+    sendFullscreenState()
+  })
+
+  // Send initial state
+  setTimeout(sendFullscreenState, 500)
 }
 
 ipcMain.handle('run-audit', async () => {
