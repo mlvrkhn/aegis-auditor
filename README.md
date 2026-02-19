@@ -1,6 +1,6 @@
 # Aegis Auditor
 
-A modern security audit tool for macOS that provides comprehensive system security assessment and vulnerability detection. Built as a portfolio project showcasing modern desktop application development.
+Security audit tool for macOS that provides system security assessment and vulnerability detection.
 
 ## Overview
 
@@ -148,38 +148,10 @@ Each check has:
 - **Responsive UI** - Hardware acceleration with Tailwind CSS
 - **Low Memory** - Vue 3 composition API for efficient reactivity
 
-## Future Enhancements
-
-- [ ] Detailed remediation guidance for failed checks
-- [ ] Automated fixes for certain security issues
-- [ ] Scheduled audit reports
-- [ ] Export audit results (PDF, JSON)
-- [ ] Multi-user support
-- [ ] Custom check creation
-- [ ] Dark/light theme toggle
-
-## Troubleshooting
-
-### App won't start
-- Clear `node_modules` and reinstall: `rm -rf node_modules && npm install`
-- Clear app cache: `rm -rf ~/.config/aegis-auditor`
-
-### Audit hangs
-- Check console for errors: `npm run dev` and watch terminal
-- Ensure security tools aren't blocking system calls
-
-### Build fails
-- Verify Node.js version: `node --version` (should be 16+)
-- Clear build cache: `rm -rf dist`
-
-## License
-
-MIT - Feel free to use this project for learning and portfolio purposes.
-
 ## Author
 
-Martin Gawlyta - [GitHub](https://github.com/yourusername) | [Portfolio](https://yourportfolio.com)
+Martin Gawlyta - [GitHub](https://github.com/mlvrkhn)
 
 ---
 
-Built with ❤️ as a modern security audit tool and portfolio project.
+Built as a modern security audit tool and portfolio project.
